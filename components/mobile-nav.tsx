@@ -50,6 +50,13 @@ export function MobileNav() {
             Blog
           </Link>
           <Link
+            href="/video"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+            onClick={() => setOpen(false)}
+          >
+            Video
+          </Link>
+          <Link
             href="#"
             className="text-muted-foreground transition-colors hover:text-foreground"
             onClick={() => setOpen(false)}

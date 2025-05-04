@@ -44,6 +44,12 @@ export default function Home() {
                 Blog
               </Link>
               <Link
+                href="/video"
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Video
+              </Link>
+              <Link
                 href="#"
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
               >
