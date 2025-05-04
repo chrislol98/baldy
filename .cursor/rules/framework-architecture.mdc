@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Framework & Component Architecture
+
+This project is built on:
+- Next.js 15 with App Router
+- React 19
+- TypeScript
+- Tailwind CSS
+- shadcn/ui component library
+
+## App Router Structure
+
+The [app/](mdc:app) directory follows Next.js App Router conventions:
+- Each folder represents a route segment
+- `page.tsx` files define UI for a route
+- `layout.tsx` files define shared UI for child routes
+- Route groups use the `(groupName)` naming convention
+
+## Component Patterns
+
+UI components follow these patterns:
+- Components use TypeScript for type safety
+- The [components/ui/](mdc:components/ui) directory contains reusable UI components
+- Components use Tailwind CSS for styling
+- shadcn/ui components use Radix UI primitives (see the [button.tsx](mdc:components/ui/button.tsx) component)
+
+## Utility Functions
+
+The [lib/utils.ts](mdc:lib/utils.ts) file contains utility functions for:
+- CSS class merging with `cn()` (combines clsx and tailwind-merge)
+- Other shared utility functions
+

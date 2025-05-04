@@ -1,0 +1,50 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Development Workflow
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+2. Start the development server:
+   ```bash
+   pnpm dev
+   ```
+
+3. Open [http://localhost:3000](mdc:http:/localhost:3000) in your browser.
+
+## Key Scripts
+
+The following scripts are available in [package.json](mdc:package.json):
+
+- `pnpm dev` - Start the development server with Turbopack
+- `pnpm build` - Build the application for production
+- `pnpm start` - Start the production server
+- `pnpm lint` - Run ESLint to check code quality
+
+## Adding New Components
+
+1. For shadcn/ui components, use the CLI:
+   ```bash
+   npx shadcn-ui@latest add [component-name]
+   ```
+
+2. Custom components should be added to the appropriate directory:
+   - UI components: [components/ui/](mdc:components/ui)
+   - Page-specific components: Create in the respective page directory
+   - Shared components: Create in [components/](mdc:components)
+
+## Best Practices
+
+- Use TypeScript for type safety
+- Follow the Next.js App Router patterns
+- Use Tailwind CSS for styling
+- Keep components small and focused on a single responsibility
+- Use utility functions from [lib/utils.ts](mdc:lib/utils.ts) for common operations
+
