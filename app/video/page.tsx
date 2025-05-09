@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { Triangle } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { MobileNav } from "@/components/mobile-nav"
 import { VideoPlayer } from "@/components/video-player"
 
 export default function VideoPage() {
@@ -14,7 +13,6 @@ export default function VideoPage() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-6 md:gap-8 lg:gap-10">
             <div className="flex items-center">
-              <MobileNav />
               <Link href="/" className="flex items-center space-x-2">
                 <Triangle className="h-6 w-6" />
                 <span className="font-bold inline-block">
